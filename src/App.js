@@ -18,7 +18,7 @@ function App() {
 
   const fetchData = async (city) => {
     try {
-      const response = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=af373823802b420383a125035211405&q=${city}&days=10&aqi=no&alerts=no`);
+      const response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=af373823802b420383a125035211405&q=${city}&days=10&aqi=no&alerts=no`);
       setData(response.data);
       setLoading(false)
     }
